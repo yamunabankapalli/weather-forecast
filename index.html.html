@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Forecast</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #0f0f14;
+        color: #ffffff;
+    }
+
+    .container {
+        max-width: 420px;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .location {
+        background: #1c1c24;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .current-weather {
+        background: linear-gradient(135deg, #2b2b3c, #1b1b27);
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .temp {
+        font-size: 48px;
+        font-weight: bold;
+    }
+
+    .condition {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    .details {
+        background: #1c1c24;
+        border-radius: 15px;
+        padding: 15px;
+    }
+
+    .detail-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #2c2c36;
+        font-size: 14px;
+    }
+
+    .detail-row:last-child {
+        border-bottom: none;
+    }
+
+    .forecast {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .forecast-card {
+        background: #1c1c24;
+        border-radius: 12px;
+        padding: 10px;
+        width: 22%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .forecast-card span {
+        display: block;
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="header">Weather Forecast</div>
+
+    <div class="location">📍 Kullu Manali,Manali,Himachal Pradesh</div>
+
+    <div class="current-weather">
+        <div>
+            <div class="temp">-15°</div>
+            <div class="condition">Fog</div>
+            <div class="condition">Day -2° • Night -13°</div>
+        </div>
+        <div style="font-size:50px;">🌫️</div>
+    </div>
+
+    <div class="forecast">
+        <div class="forecast-card">
+            Morning
+            <span>-17°</span>
+            🌥️
+        </div>
+        <div class="forecast-card">
+            Afternoon
+            <span>-2°</span>
+            🌥️
+        </div>
+        <div class="forecast-card">
+            Evening
+            <span>-7°</span>
+            ☁️
+        </div>
+        <div class="forecast-card">
+            Night
+            <span>-14°</span>
+            🌙
+        </div>
+    </div>
+
+    <div class="details" style="margin-top:20px;">
+        <div class="detail-row">
+            <span>Feels Like</span>
+            <span>-8°</span>
+        </div>
+        <div class="detail-row">
+            <span>Wind</span>
+            <span>10km/h</span>
+        </div>
+        <div class="detail-row">
+            <span>Humidity</span>
+            <span>36%</span>
+        </div>
+        <div class="detail-row">
+            <span>Dew Point</span> 
+            <span>-10°</span>
+        </div>
+        <div class="detail-row">
+            <span>Sunrise</span>
+            <span>07:12</span>
+        </div>
+        <div class="detail-row">
+            <span>sunset</span>
+            <span>05:57</span>
+        </div>
+        <div class="detail-row">
+            <span>pressure</span>
+            <span>102.6Kpa</span>
+        </div>
+        <div class="detail-row">
+            <span>UV Index</span>
+            <span>very low(0-1)</span>
+        </div>
+        <div class="detail-row">
+            <span>visibility</span>
+            <span>very clear</span>
+        </div>
+        <div class="detail-row">
+            <span>moon phase</span>
+            <span>Waning Gibbous</span>
+        </div>
+        <div class="map-container">
+    <iframe 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqC2rddnCeyvE9MCiSki8_BIM-oSO5vyfW_A&s">
+    </iframe>
+</div>
+        <div class="aqi-card">
+    <h1><div class="aqi-header">Air Quality Index</div></h1>
+
+    <div class="aqi-status">
+        <div>
+            <div class="aqi-value">178</div>
+            <div class="aqi-level">Moderate to Poor</div>
+        </div>
+        <div style="font-size:40px;">🌫️</div>
+    </div>
+
+    <div class="aqi-desc">
+        Air quality is currently unhealthy for sensitive groups. 
+        People with respiratory or heart conditions, children, and older adults 
+        should reduce prolonged outdoor exertion.
+    </div>
+</div>
+        
+        
+
+    
+
+</div>
+</body>
+</html>
